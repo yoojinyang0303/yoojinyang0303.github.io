@@ -1,0 +1,120 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  font-family: "Nanum Barun Gothic";
+  background-image: url("./img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mainPage_txt {
+  width: 255px;
+  height: 17px;
+  float: right;
+  margin-right: 190px;
+  margin-top: 290px;
+  font-family: "Nanum Barun Gothic";
+  color: #a18e7d;
+  font-size: 22px;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+}
+.mainPage_txt ::before {
+  content: "바탕화면 느낌을 주려던 것..";
+  position: absolute;
+  color: white;
+  overflow: hidden;
+  border-right: 1px solid rgb(22, 22, 22);
+  text-shadow: 1px 1px 1px gray;
+  animation: typing 6s steps(20);
+}
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+.nav {
+  width: 5%;
+  height: inherit;
+  position: absolute;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a18e7d;
+}
+
+.nav_icons {
+  box-shadow: 3px 0px 3px rgba(48, 48, 48, 0.582);
+  position: absolute;
+  background-color: rgb(250, 250, 248);
+  width: 85%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 10px 10px 0;
+}
+.icons {
+  margin: 10px 0;
+  pistion: relative;
+}
+.icons :hover {
+  box-shadow: 2px 2px 2px gray;
+}
+
+.nav_icons img {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+.contents {
+  width: 95%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  overflow: hidden;
+  position: relative;
+  transform: translateX(60px);
+  transition: all 800ms cubic-bezier(0.8, 0, 0.33, 1);
+  border-radius: 30px 0 0 30px;
+}
+
+.contents-open {
+  transform: translateX(0px);
+  border-radius: 0% 0% 0% 0%;
+  background-color: orange;
+}
+*/
+.left_contents {
+  width: 50%;
+  height: inherit;
+  float: left;
+  background-color: rgb(250, 250, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: black solid 1px;
+}
+
+.right_contents {
+  width: 50%;
+  height: inherit;
+  background-color: rgb(250, 250, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
