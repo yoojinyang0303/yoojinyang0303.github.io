@@ -1,0 +1,310 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #a18e7d;
+}
+
+.nav {
+  width: 5%;
+  height: inherit;
+  position: absolute;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a18e7d;
+}
+
+.nav_icons {
+  box-shadow: 3px 0px 3px rgba(48, 48, 48, 0.582);
+  position: absolute;
+  background-color: rgb(250, 250, 248);
+  width: 85%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 10px 10px 0;
+}
+
+.icons {
+  margin: 10px 0;
+}
+.icons :hover {
+  box-shadow: 2px 2px 2px gray;
+}
+
+.nav_icons img {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents {
+  width: 95%;
+  height: inherit;
+  float: right;
+  display: inline-block;
+  animation: fadein 1s;
+  animation-timing-function: cubic-beizer(0.9, 0.1, 0.9, 0.8);
+  -webkit-animation: fadein 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nanum Barun Gothic";
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.go2main {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.go2main img {
+  width: 30px;
+  height: 30px;
+}
+
+.left_box {
+  width: 50%;
+  height: inherit;
+  float: left;
+  background-color: rgb(250, 250, 248);
+  border-right: rgb(226, 226, 226) solid 1px;
+}
+
+/*profile.html 부분 */
+.profile_box {
+  width: 80%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.img_box {
+  display: flex;
+  margin-left: 120px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  margin-top: 100px;
+}
+
+.img_box img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.introduce {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  margin-top: 280px;
+  font-family: "Nanum Barun Gothic";
+}
+
+.idx {
+  width: 80px;
+  height: 200px;
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #a18e7d;
+}
+
+p {
+  font-size: 13px;
+  line-height: 160%;
+}
+
+.info {
+  position: absolute;
+  margin-left: 120px;
+  margin-top: 30px;
+}
+
+/*hobby.html 부분*/
+.pageTitle {
+  width: 140px;
+  height: 60px;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #a18e7d;
+}
+
+#small_pageTitle {
+  color: rgb(58, 58, 58);
+  font-weight: normal;
+}
+
+#left_hobby {
+  width: 80%;
+  height: 480px;
+  margin-left: 50px;
+  margin-top: 140px;
+  background-color: #f7f4f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.left_contents {
+  width: 80%;
+  height: 480px;
+  margin-left: 50px;
+  margin-top: 500px;
+  background-color: #f7f4f2;
+  margin-left: 50px;
+  margin-top: 120px;
+  border-radius: 20px;
+}
+
+.hobby_info {
+  width: 130px;
+  height: 130px;
+  align-items: center;
+  background-color: white;
+  margin: 10px;
+}
+
+.hobby_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.hobby_img img {
+  width: 100px;
+  height: 100px;
+}
+
+.hobby_txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  background-color: rgba(92, 92, 92, 0.171);
+  font-size: 10px;
+}
+
+.hobby_info :hover {
+  box-shadow: 3px 3px 5px lightgray;
+}
+#hobby_txt_now {
+  color: rgb(231, 231, 231);
+  text-shadow: 1px 0 1px black;
+  background-color: #77354694;
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+/*mbti.html 부분*/
+#mbti {
+  width: 20%;
+  height: 250px;
+  margin-top: 80px;
+}
+.mbti_img {
+  width: 60%;
+  font-size: 40px;
+  color: rgb(20, 199, 190);
+  margin-top: 20px;
+  text-align: center;
+}
+.mbti_img p {
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  margin: 0;
+}
+.mbti_tmi p {
+  background-color: #f7f4f2;
+  border-radius: 20px;
+  width: 100%;
+  margin-left: 60px;
+  height: 300px;
+  display: flex;
+  margin-top: 320px;
+  justify-content: center;
+  align-items: center;
+}
+
+.left_info img {
+  margin-left: 90px;
+  height: 260px;
+  width: 60%;
+}
+.right_box {
+  width: 50%;
+  height: inherit;
+  background-color: rgb(250, 250, 248);
+  box-shadow: -5px 0 5px lightgray;
+}
+
+.rightTitle {
+  width: 140px;
+  height: 60px;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #494949;
+}
+
+.right_hobby_box {
+  width: 80%;
+  height: 480px;
+  margin-left: 50px;
+  margin-top: 500px;
+  background-color: #f7f4f2;
+  margin-left: 50px;
+  margin-top: 120px;
+  border-radius: 20px;
+}
+#right_hobby {
+  margin-top: 140px;
+}
+.right_hobby_box p {
+  margin-left: 20px;
+  margin-top: 20px;
+}
